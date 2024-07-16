@@ -2,7 +2,7 @@
 @section('content')
     <div class="main-content">
         <div class="page-header d-flex justify-content-between align-items-center shadow shadow-sm p-3 mb-5">
-            <h3 class="mb-0">Hero Create</h3>
+            <h3 class="mb-0">Hero Edit</h3>
             <a href="{{ route('hero.index') }}" class="btn btn-sm btn-success">Back</a>
         </div>
 
@@ -19,32 +19,32 @@
 
                         <div class="form-group col-12 col-sm-6">
                             <div class="mb-3">
-                                <label class="form-label">Designation<span class="text-danger">*</span></label>
+                                <label class="form-label">Designation: <span class="text-danger">*</span></label>
                                 <input type="text" name="designation" value="{{ old('designation') }}"
                                        class="form-control">
                             </div>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <div class="mb-3">
-                                <label class="form-label">Phone<span class="text-danger">*</span></label>
+                                <label class="form-label">Phone: <span class="text-danger">*</span></label>
                                 <input type="text" name="phone" value="{{ old('phone') }}" class="form-control">
                             </div>
                         </div>
                         <div class="form-group  col-12 col-sm-6">
                             <div class="mb-3">
-                                <label class="form-label">Email<span class="text-danger">*</span></label>
+                                <label class="form-label">Email: <span class="text-danger">*</span></label>
                                 <input type="email" name="email" value="{{ old('email') }}" class="form-control">
                             </div>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <div class="mb-3">
-                                <label class="form-label">Image<span class="text-danger">*</span></label>
+                                <label class="form-label">Image: <span class="text-danger">*</span></label>
                                 <input type="file" class="form-control">
                             </div>
                         </div>
                         <div class="form-group col-12 col-sm-6">
                             <div class="mb-3">
-                                <label class="form-label">Preview<span class="text-danger">*</span></label>
+                                <label class="form-label">Preview</label>
                             </div>
                         </div>
                         <div class="form-group col-12">

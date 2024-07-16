@@ -3,18 +3,16 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Models\Hero;
 use Illuminate\Http\Request;
 
-class HeroController extends Controller
+class SkillController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $heroes = Hero::all();
-        return view('backend.hero.index', compact('heroes'));
+        //
     }
 
     /**
@@ -22,7 +20,7 @@ class HeroController extends Controller
      */
     public function create()
     {
-        return view('backend.hero.create');
+        //
     }
 
     /**
@@ -46,8 +44,7 @@ class HeroController extends Controller
      */
     public function edit(string $id)
     {
-        $hero = Hero::findOrFail($id);
-        return view('backend.hero.edit', compact('hero'));
+        //
     }
 
     /**
