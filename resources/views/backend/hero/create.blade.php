@@ -3,7 +3,7 @@
     <div class="main-content">
         <div class="page-header d-flex justify-content-between align-items-center shadow shadow-sm p-3 mb-5">
             <h3 class="mb-0">Hero</h3>
-            <a href="{{ route('test.create') }}" class="btn btn-sm btn-success">Add New</a>
+            <a href="{{ route('hero.create') }}" class="btn btn-sm btn-success">Add New</a>
         </div>
 
         <div class="row">

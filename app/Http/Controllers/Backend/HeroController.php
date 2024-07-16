@@ -5,14 +5,14 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class TestController extends Controller
+class HeroController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('backend.test.index');
+        return view('backend.hero.index');
     }
 
     /**
@@ -20,7 +20,7 @@ class TestController extends Controller
      */
     public function create()
     {
-        return view('backend.test.create');
+        return view('backend.hero.create');
     }
 
     /**
