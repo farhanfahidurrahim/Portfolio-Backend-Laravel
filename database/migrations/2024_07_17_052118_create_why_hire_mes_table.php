@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('why_hire_mes', function (Blueprint $table) {
             $table->id();
-            $table->id();
+            $table->text('description')->nullable();
+            $table->enum('status', [0, 1])->nullable()->comment('0=>inactive,1=>active');
             $table->timestamps();
         });
     }
