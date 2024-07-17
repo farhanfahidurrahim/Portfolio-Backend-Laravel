@@ -30,7 +30,7 @@ class WorkExperienceSeeder extends Seeder
             ],
             [
                 'company_name' => 'Codeless Technologies',
-                'designation' => 'Internsip',
+                'designation' => 'Internship',
                 'duration' => '2020-Present',
                 'key_point' => 'Implemented new technologies.',
                 'status' => '1',
