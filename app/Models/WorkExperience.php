@@ -14,5 +14,6 @@ class WorkExperience extends Model
         'designation',
         'duration',
         'key_point',
+        'status',
     ];
 }
