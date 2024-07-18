@@ -2,7 +2,7 @@
 @section('content')
     <div class="main-content">
         <div class="page-header d-flex justify-content-between align-items-center shadow shadow-sm p-3 mb-5">
-            <h3 class="mb-0"># Create</h3>
+            <h3 class="mb-0"># Edit</h3>
             <a href="" class="btn btn-sm btn-success">Back</a>
         </div>
 
