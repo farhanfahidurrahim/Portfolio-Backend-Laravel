@@ -1,15 +1,55 @@
-<aside>
-    <div class="sidebar">
-        <ul>
-            <li><a href="{{route('dashboard')}}"><i class="fa-solid fa-home"></i>Dashboard</a></li>
-            <li><a href="{{ route('hero.index')  }}"><i class="fa-solid fa-bars"></i>Hero</a></li>
-            <li><a href=""><i class="fa-solid fa-bars"></i>About</a></li>
-            <li><a href=""><i class="fa-solid fa-bars"></i>Skill</a></li>
-            <li><a href=""><i class="fa-solid fa-bars"></i>Work & Exp</a></li>
-            <li><a href=""><i class="fa-solid fa-bars"></i>Latest Project</a></li>
-            <li><a href=""><i class="fa-solid fa-bars"></i>Education</a></li>
-            <li><a href=""><i class="fa-solid fa-bars"></i>Hire-Me</a></li>
-            <li><a href=""><i class="fa-solid fa-bars"></i>Contact Form</a></li>
-        </ul>
+
+<div class="sidebar">
+    <div class="logo">
+        <a href="" class="small_logo d-none">
+            <img src="{{asset('backend/assets/images/logo-l.png')}}" alt="small logo">
+        </a>
+        <a href="" class="big_logo">
+            <img src="{{asset('backend/assets/images/logo.png')}}" alt="big logo">
+        </a>
     </div>
-</aside>
+    <ul id="sidebar-menu">
+        <li><a href="{{ route('dashboard') }}" class="active" onclick="closeAllSubMenus()"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+        <li><a href="#" onclick="closeAllSubMenus()"><i class="fas fa-bars"></i> <span>Hero</span></a></li>
+        <li class="menu">
+            <a href="javascript:void(0)" class="menu-toggle" data-submenu="submenu1" onclick="toggleSubMenu(event)">
+                <i class="fas fa-bars"></i>
+                <span>Menu One <i class="fas fa-angle-right"></i></span>
+            </a>
+            <ul class="submenu" data-submenu="submenu1">
+                <li><a href="{{ route('sub.menu.one') }}" onclick="preventSubMenuHide(event)"><i class="far fa-circle"></i> <span>Submenu 1</span></a></li>
+                <li><a href="{{ route('sub.menu.two') }}" onclick="preventSubMenuHide(event)"><i class="far fa-circle"></i> <span>Submenu 2</span></a></li>
+            </ul>
+        </li>
+        <li class="menu">
+            <a href="javascript:void(0)" class="menu-toggle" data-submenu="submenu2" onclick="toggleSubMenu(event)">
+                <i class="fas fa-bars"></i>
+                <span>Menu Two <i class="fas fa-angle-right"></i></span>
+            </a>
+            <ul class="submenu" data-submenu="submenu2">
+                <li><a href="{{ route('sub.menu.two') }}" onclick="preventSubMenuHide(event)"><i class="far fa-circle"></i> <span>Submenu 1</span></a></li>
+                <li><a href="{{ route('sub.menu.two') }}" onclick="preventSubMenuHide(event)"><i class="far fa-circle"></i> <span>Submenu 1</span></a></li>
+            </ul>
+        </li>
+        <li class="menu">
+            <a href="javascript:void(0)" class="menu-toggle" data-submenu="submenu3" onclick="toggleSubMenu(event)">
+                <i class="fas fa-bars"></i>
+                <span>Menu Three <i class="fas fa-angle-right"></i></span>
+            </a>
+            <ul class="submenu" data-submenu="submenu3">
+                <li><a href="{{ route('sub.menu.two') }}" onclick="preventSubMenuHide(event)"><i class="far fa-circle"></i> <span>Submenu 1</span></a></li>
+                <li><a href="{{ route('sub.menu.two') }}" onclick="preventSubMenuHide(event)"><i class="far fa-circle"></i> <span>Submenu 1</span></a></li>
+            </ul>
+        </li>
+        <li class="menu">
+            <a href="javascript:void(0)" class="menu-toggle" data-submenu="submenu4" onclick="toggleSubMenu(event)">
+                <i class="fas fa-bars"></i>
+                <span>Menu Four <i class="fas fa-angle-right"></i></span>
+            </a>
+            <ul class="submenu" data-submenu="submenu4">
+                <li><a href="{{ route('sub.menu.two') }}" onclick="preventSubMenuHide(event)"><i class="far fa-circle"></i> <span>Submenu 1</span></a></li>
+                <li><a href="{{ route('sub.menu.two') }}" onclick="preventSubMenuHide(event)"><i class="far fa-circle"></i> <span>Submenu 1</span></a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

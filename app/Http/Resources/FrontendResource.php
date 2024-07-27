@@ -15,8 +15,11 @@ class FrontendResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'hero' => HeroResource::collection($this->get('hero')),
-            'about' => AboutResource::collection($this->get('about')),
+            'hero' => new HeroResource($this->get('hero')),
+            'about' => new AboutResource($this->get('about')),
+            'skills' => SkillResource::collection($this->get('skills')),
+            'workExp' => WorkExperienceResource::collection($this->get('workExp')),
+            'latestProject' => LatestProjectResource::collection($this->get('latestProject')),
         ];
     }
 }
